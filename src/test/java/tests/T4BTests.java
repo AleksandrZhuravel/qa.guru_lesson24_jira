@@ -6,10 +6,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Selectors.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,7 +23,7 @@ import static io.qameta.allure.Allure.step;
 @Owner("zhuravel")
 public class T4BTests extends TestBase {
     private String baseUrl = "https://t4b.com";
-    private String chinaUrl = "http://t4b.cn/";
+    private String chinaUrl = "https://t4b.cn/";
     private String rusUrl = "https://t4b.com/ru/";
 
     private String infoSkype = "tools4brokers.support",
@@ -43,6 +40,7 @@ public class T4BTests extends TestBase {
     @Test
     @Story("Сhange the interface language to Chinese")
     @DisplayName("1. Should change the interface language to Chinese")
+    @Tag("web")
     void shouldChangeInterfaceLanguageToChinese() {
         link("T4B Service", baseUrl);
 
@@ -64,6 +62,7 @@ public class T4BTests extends TestBase {
     @Test
     @Story("Сhange the interface language to Russian")
     @DisplayName("2. Should change the interface language to Russian")
+    @Tag("web")
     void shouldChangeInterfaceLanguageToRussian() {
         link("T4B Service", baseUrl);
 
@@ -84,6 +83,7 @@ public class T4BTests extends TestBase {
     @Test
     @Story("Chat with a manager on the Russian page")
     @DisplayName("3. Should open a chat window with a manager")
+    @Tag("web")
     void shouldOpenChatWindowWithManager() {
         link("T4B Service", baseUrl);
 
@@ -109,6 +109,7 @@ public class T4BTests extends TestBase {
     @Test
     @Story("Go to articles of the 'KNOWLEDGE BASE' section")
     @DisplayName("4. Should go to the article 'BBI Ideology'")
+    @Tag("web")
     void shouldGoToArticleBBIIdeology() {
         link("T4B Service", baseUrl);
 
@@ -134,6 +135,7 @@ public class T4BTests extends TestBase {
     @Test
     @Story("Checking contact information")
     @DisplayName("5. Сontact information should be true")
+    @Tag("web")
     void contactInformationShouldBeTrue() {
         link("T4B Service", baseUrl);
 

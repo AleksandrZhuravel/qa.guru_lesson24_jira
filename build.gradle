@@ -98,7 +98,7 @@ help {
         println "************************************************************************ "
         println "***                                                                  *** "
         println "*** Welcome to                                                       *** "
-        println "*** https://github.com/autotests-cloud/qa_guru_diplom_project        *** "
+        println "*** https://github.com/AleksandrZhuravel/qa.guru_lesson24_jira        *** "
         println "***                                                                  *** "
         println "*** Requirements for mobile tests:                                   *** "
         println "*** - get browserstack account                                       *** "
